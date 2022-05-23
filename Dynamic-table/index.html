@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dynamic Table</title>
+</head>
+
+<body>
+
+    <h1>Equipment Wise Details</h1>
+    <table>
+        <tr>
+            <thead>
+                <td>MACHINE NAME</td>
+                <td>MACHINE ID</td>
+                <td colspan='3' rowspan='2'>ENERGY CONSUMED
+                    <table>
+                        <td>Today</td>
+                        <td>MTD</td>
+                        <td>YTD</td>
+                    </table>
+                </td>
+                <td>ACTIVE POWER <br> (MW)</td>
+                <td>APARENT POWER <br> (MVA)</td>
+                <td>REACTIVE POWER <br>(MVAr)</td>
+                <td>CURRENT (Amps)</td>
+                <td>VOLTAGE (Volts)</td>
+                <td>POWER FACTOR</td>
+                <td colspan='3' rowspan='2'>IDLE TIME
+                    <table>
+                        <td>Today</td>
+                        <td>MTD</td>
+                        <td>YTD</td>
+                    </table>
+                </td>
+            </thead>
+
+        </tr>
+
+        <tbody id="Table">
+
+        </tbody>
+    </table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <h1>Form Validation</h1>
+
+            <div class="field">
+                <h3 class='source'>Select your source :</h3>
+                <input type="text" id="source" class="form-control" placeholder='Google Cloud Storage'>
+            </div>
+            <small id='source_error'></small>
+
+            <div class="field">
+                <h3 class='pipeline'>Provide a name for pipeline :</h3>
+                <input type="text" id="pipeline" class='form-control ' placeholder='e.g., cust_shop_energy_gateway001'>
+            </div>
+            <small id='pipeline_error'></small>
+
+            <div class="field">
+                <h3 class='project_name'>GCS project name :</h3>
+                <input type="text" id="project_name" class='form-control ' placeholder='project-id'>
+            </div>
+            <small id='project_error'></small>
+
+            <br>
+
+            <div class="field">
+                <h3 class='bucket_name'>GCS bucket name :</h3>
+                <input type="text" id="bucket_name" class='form-control ' placeholder='gs://your-bucket'>
+            </div>
+            <small id='bucket_error'></small>
+
+            <br>
+
+            <div class="field">
+                <h3 class='storage'>Input Cloud Storage File(s) :</h3>
+                <input type="text" id="storage" class='form-control store' placeholder='GCS location of your files'>
+            </div>
+            <br>
+            <small class='extra'>Example: gs://your-bucket/your-files/01.csv</small><br>
+            <small id='storage_error'></small>
+
+            <br>
+
+            <div class="field">
+                <h3 class='credintals'>GCS credentials :</h3>
+                <input type="text" id="credintals" class='form-control'>
+            </div>
+            <small id='credintals_error'></small>
+
+            <br>
+
+            <div class="field">
+                <h3 class='run-every'>Run Every :</h3>
+                <input type="text" id="run-every" class='form-control ' placeholder='(in minutes)'>
+            </div>
+            <small id='every_error'></small>
+
+            <br>
+
+            <button class='btn' onclick='validate()'>Create</button>
+            <button class='btn'>Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
